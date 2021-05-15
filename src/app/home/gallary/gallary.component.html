@@ -1,0 +1,19 @@
+<div class="gallary-parent">
+    <div class="cards-holder">
+        <div *ngFor="let card of data" data-aos="flip-down" class="glass-card" data-tilt data-tilt-glare data-tilt-max-glare="0.8" data-tilt-speed="400">
+            <img [src]="card.image">
+            <a class="open-btn">Open</a>
+            <div class="image-info">
+                <div class="title">
+                    {{card.title}} 
+                </div>
+                <div class="date">
+                    {{card.date}}
+                </div>
+                <div class="description">
+                    {{card.description}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

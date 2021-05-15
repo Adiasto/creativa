@@ -1,0 +1,40 @@
+$primary-theme:#00a1ae;
+$primary-black: #3e4546;
+
+.header-parent {
+  position: fixed;
+  z-index: 10000;
+  width: 100vw;
+
+  nav {
+    background-color: transparent;
+    padding: 0 20px;
+    box-shadow: none;
+    ul {
+      li {
+        a {
+          padding: 0px 30px;
+          background-color: rgba(214, 214, 214, 0.329);
+          border-radius: 50px;
+          margin-left: 20px;
+          color: $primary-black;
+          box-shadow: inset 5px 0px 8px 1px #dfdfdf, inset -5px 0px 8px 0px rgb(148, 148, 148), -3px 0px 9px 0px rgb(148, 148, 148),
+          3px 0px 9px 0px #cccccc;
+
+          &.active-nav-link {
+            font-size: 18px;
+            color: $primary-theme;
+            border-bottom: 3px solid $primary-theme;
+            box-shadow: inset 0px -1px 4px 0px $primary-theme, inset 5px 0px 8px 1px #dfdfdf, inset -5px 0px 8px 0px rgb(148, 148, 148), -3px 0px 9px 0px rgb(148, 148, 148),
+          }
+        }
+      }
+    }
+
+    .brand-logo-size {
+      width: 150px;
+      height: auto;
+      margin-top: 10px;
+    }
+  }
+}

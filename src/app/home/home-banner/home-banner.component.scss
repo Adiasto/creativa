@@ -1,0 +1,27 @@
+.home-banner {
+//   width: 100vw;
+//   position: relative;
+
+//   .layer-1 {
+//     width: 100vw;
+//     height: auto;
+//     position: absolute;
+//     z-index: 10;
+//   }
+  .layer-2 {
+    width: 100%;
+    // position: absolute;
+    z-index: 20;
+    background-color: rgba(245, 255, 185, 0.335);
+    bottom: 0;
+    height: auto;
+  }
+//   .layer-3 {
+//     width: 100vw;
+//     position: absolute;
+//     z-index: 30;
+//     background-color: rgba(175, 252, 255, 0.335);
+//     bottom: 0;
+//     height: 30vh;
+//   }
+}

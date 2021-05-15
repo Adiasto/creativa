@@ -1,0 +1,78 @@
+$primary-theme:#00a1ae;
+
+.gallary-parent{
+    height: 100vh;
+    width: 100wv;
+    padding: 0 20px;
+    background-image: url('../../../assets/images/gallary-background.jpg');
+    background-size: cover;
+
+    .cards-holder{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .glass-card{
+            width: auto;
+            max-width: 350px;
+            background-color: rgba(200, 200, 200, 0.144);
+            box-shadow:  6px 4px 9px 1px rgba(168, 168, 168, 0.294);
+            min-height: 200px;
+            margin-top: 20px;
+            border-radius: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            border-right: 1px solid rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            transform-style: preserve-3d;
+            transform: perspective(1000px);
+
+            &:hover{
+                backdrop-filter: none;
+                background-color: rgba(79, 79, 195, 0.185);
+                color: white;
+
+                .open-btn{
+                    display: block;
+                }
+            }
+
+            img{
+                width: 100%;
+                object-fit: cover;
+                height: 288px;
+                aspect-ratio: 1;
+                transform: translateZ(40px);
+            }
+
+            .image-info{
+                transform: translateZ(40px);
+
+                .title{
+                    font-weight: bold;
+                    color: $primary-theme;
+                    text-align: center;
+                }
+
+            }
+
+            .open-btn{
+                transform: translateZ(100px);
+                display: none;
+                position: absolute;
+                top: 250px;
+                background-color: rgba(60, 122, 255, 0.178);
+                left: 43%;
+                padding: 5px 10px;
+                border-radius: 20px;
+                border-top: 1px solid rgba(255, 255, 255, 0.5);
+                border-left: 1px solid rgba(255, 255, 255, 0.5);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+                border-right: 1px solid rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+}
