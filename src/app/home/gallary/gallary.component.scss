@@ -29,6 +29,7 @@ $primary-theme:#00a1ae;
             padding: 30px;
             transform-style: preserve-3d;
             transform: perspective(1000px);
+            color: white;
 
             &:hover{
                 backdrop-filter: none;
@@ -55,6 +56,10 @@ $primary-theme:#00a1ae;
                     font-weight: bold;
                     color: $primary-theme;
                     text-align: center;
+                    padding: 5px 10px;
+                    background-color: rgba(51, 14, 14, 0.246);
+                    backdrop-filter: blur(10px);
+                    text-shadow: 2px 3px 3px #000000d9;
                 }
 
             }
