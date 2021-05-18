@@ -1,31 +1,45 @@
 .home-banner {
-//   width: 100vw;
+  width: 100%;
+  height: 100vh;
   position: relative;
+  overflow: hidden;
 
   .layer-1 {
     width: 100%;
-    height: 50vh;
+    height: auto;
     position: absolute;
     z-index: 10;
-    background-color: rgba(255, 255, 255, 0.26);
-    backdrop-filter: blur(5px);
   }
   .layer-2 {
     width: 100%;
-    // position: absolute;
-    z-index: 20;
-    background-color: rgba(245, 255, 185, 0.335);
-    bottom: 0;
     height: auto;
+    position: absolute;
+    z-index: 20;
   }
   .layer-3 {
-    width: 80%;
-    position: absolute;
-    left: 10%;
-    z-index: 30;
-    top: 15%;
+    width: 100%;
     height: auto;
-    text-align: center;
+    position: absolute;
+    z-index: 30;
+  }
+  .layer-3 {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 40;
   }
 
+  .layer-4 {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 50;
+  }
+
+  #banner-holder{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 42;
+  }
 }

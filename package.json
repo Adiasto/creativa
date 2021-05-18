@@ -21,6 +21,7 @@
     "@angular/router": "~11.2.11",
     "aos": "^2.3.4",
     "materialize-css": "^1.0.0-rc.2",
+    "rellax": "^1.12.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "vanilla-tilt": "^1.7.0",
